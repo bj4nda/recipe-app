@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
+import {Link} from "react-router-dom";
 
 export default function Meal({ meal }) {
   const [imageUrl, setImageUrl] = useState("");
 
   useEffect(() => {
     fetch(
-      `https://api.spoonacular.com/recipes/${meal.id}/information?apiKey=616c7b1c8078425593abe673a9945856&includeNutrition=false`
+      `https://api.spoonacular.com/recipes/${meal.id}/information?apiKey=bbcf60d7df554ef9878099bbe1aa5b82&includeNutrition=false`
     )
       .then((response) => response.json())
       .then((data) => {
@@ -15,7 +16,7 @@ export default function Meal({ meal }) {
         console.log("error");
       });
   }, [meal.id]);
-
+  console.log(meal.id)
   return (
     <article>
       <h1>{meal.title}</h1>
@@ -26,8 +27,14 @@ export default function Meal({ meal }) {
         <li>Preparation time: {meal.readyInMinutes} minutes</li>
         <li>Number of servings: {meal.servings}</li>
       </ul>  
-      <a target="blank" rel="noopener noreferrer" href={meal.sourceUrl}>Go to Recipe</a>
+      
+    {/*  import {Link} from 'react-router-dom'
 
+<Link to={`/recipe/${meal.id}`} state={{ meal: meal.id }}>Recipe</Link>
+ */ }
+
+{/*       <a target="blank" rel="noopener noreferrer" href={meal.sourceUrl}>Go to Recipe</a>
+ */}      <Link to={`/recipe`} state={{ meal: meal.id }}> Recipe Page </Link>
     </article>
   );
 }

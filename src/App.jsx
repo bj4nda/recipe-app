@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 import MealList from "./MealList";
-import "./style/index.css"
+import "./index.css"
 
 
 function App() {
   const [mealData, setMealData] = useState(null);
   const [calories, setCalories] = useState(2000);
 
-  const getMealData = text => {
+  function getMealData() {
     fetch(
-      `https://api.spoonacular.com/mealplanner/generate?apiKey=616c7b1c8078425593abe673a9945856&timeFrame=day&targetCalories=${calories}`
+      `https://api.spoonacular.com/mealplanner/generate?apiKey=bbcf60d7df554ef9878099bbe1aa5b82&timeFrame=day&targetCalories=${calories}`
     )
       .then((response) => response.json())
       .then((data) => {
@@ -42,3 +42,28 @@ function App() {
 }
 
 export default App;
+
+
+/* return (
+  <div className="container">
+    <h1>MEAL PLANNER</h1>
+    <div className="home-page">
+      <Link className="link" to="/meal">Single Meal</Link>
+      <Link className="link" to="/mealplan">Meal Plan</Link>
+    </div>
+  </div>
+);
+
+
+  return (
+    <div className="App">
+    <Routes>
+        <Route path="/" component={HomePage}  />
+        <Route path="/Meal" component={SingleMeal} />
+        <Route path="/MealPlan" component={MealPlan} />
+        <Redirect to="/" />
+    </Routes>
+    </div>
+  );
+}
+} */

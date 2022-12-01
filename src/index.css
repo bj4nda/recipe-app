@@ -1,0 +1,218 @@
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  :root{
+    --softPink: #F9D8D4;
+    --yellow: #F9A734;
+    --DarkYellow: #FB8B24;
+    --green: #36964C;
+    --DarkGreen: #286E38;
+  }
+
+  body {
+    font-family: "Roboto", sans-serif;
+    background-color: #f3f3f3;
+    background: radial-gradient(circle closest-side at 50px 50px, var(--DarkYellow) 3px, transparent 0),
+	radial-gradient(circle closest-side at 40px 60px, var(--DarkYellow) 3px, transparent 0),
+	radial-gradient(circle closest-side at 60px 60px, var(--DarkYellow) 3px, transparent 0),
+	radial-gradient(circle closest-side at 50px 70px, var(--DarkYellow) 3px, transparent 0),
+	
+	radial-gradient(circle closest-side at 150px 165px, var(--DarkYellow) 3px, transparent 0),
+	radial-gradient(circle closest-side at 140px 175px, var(--DarkYellow) 3px, transparent 0),
+	radial-gradient(circle closest-side at 160px 175px, var(--DarkYellow) 3px, transparent 0),
+	radial-gradient(circle closest-side at 150px 185px, var(--DarkYellow) 3px, transparent 0),
+	
+	/* Pineapple base */
+	radial-gradient(ellipse closest-side at 50px 60px, var(--yellow) 18px, transparent 0),
+	
+	radial-gradient(ellipse closest-side at 150px 175px, var(--yellow) 18px, transparent 0),
+	
+	/* Pineapple leafs */
+	radial-gradient(circle closest-side at 30px 40px, var(--softPink) 15px, transparent 0),
+	radial-gradient(circle closest-side at 40px 35px, var(--green) 15px, transparent 0),
+	radial-gradient(circle closest-side at 70px 40px, var(--softPink) 15px, transparent 0),
+	radial-gradient(circle closest-side at 60px 35px, var(--DarkGreen) 15px, transparent 0),
+	
+	radial-gradient(circle closest-side at 130px 155px, var(--softPink) 15px, transparent 0),
+	radial-gradient(circle closest-side at 140px 150px, var(--green) 15px, transparent 0),
+	radial-gradient(circle at 170px 155px, var(--softPink) 15px, transparent 0),
+	radial-gradient(circle at 160px 150px, var(--DarkGreen) 15px, transparent 0);
+	background-color: var(--softPink);
+	background-size: 180px 210px;
+  }
+  
+  
+  .App {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  header {
+    padding: 20px 0;
+    font-family: 'Lobster', cursive;
+    background-color: #080403;
+    font-size: 32px;
+  }
+  
+  header a,
+  header a:hover {
+    color: #fff;
+  }
+  
+  section {
+    margin: 2rem 0 1rem 0;
+  }
+  
+  .controls {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  input {
+    text-align: center;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  button {
+    --background-color: #005aaf;
+    --background-color-dark: #002d81;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    background-color: var(--background-color);
+    color: #f3f3f3;
+    border: none;
+    outline: none;
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    box-shadow: 6px 6px 0 var(--background-color-dark);
+  }
+  
+  button:hover {
+    background-color: #6c13d1;
+    cursor: pointer;
+  }
+  
+  button:active {
+    transform: translateX(2px) translateY(2px);
+    box-shadow: 4px 4px 0 var(--background-color-dark);
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .nutrients ul {
+    display: flex;
+    width: 35rem;
+    justify-content: space-evenly;
+
+  }
+  
+  .meals {
+    display: flex;
+  }
+  
+  img {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  article {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    margin: 0 1rem;
+    max-width: 300px;
+    box-shadow: 0 4px 8px 2px rgba(77, 77, 77, 0.15);
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  .instructions {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+  
+  a {
+    text-decoration: none;
+    background-color: #7f21eb;
+    color: #f3f3f3;
+    width: fit-content;
+    padding: 0.5rem 1rem;
+  }
+  
+  a:hover {
+    background-color: #6c13d1;
+    cursor: pointer;
+  }
+  
+  .name {
+    font-size: 40px;
+    color: green;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .pic{
+    height: 50vh;
+    width: 70vh;
+  }
+  .title {
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .dish{
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* .instructionse{
+    font-size: 25px;
+    height: auto;
+    width: 600px;
+    min-width: 800px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    background-color: #F9D8D4;
+    margin-inline: auto;
+    margin: 10px 20px;
+  }
+ */
+  @media only screen and (max-width: 1024px) {
+    .meals {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .nutrients ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+  }
