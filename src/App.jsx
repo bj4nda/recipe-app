@@ -42,28 +42,3 @@ function App() {
 }
 
 export default App;
-
-
-/* return (
-  <div className="container">
-    <h1>MEAL PLANNER</h1>
-    <div className="home-page">
-      <Link className="link" to="/meal">Single Meal</Link>
-      <Link className="link" to="/mealplan">Meal Plan</Link>
-    </div>
-  </div>
-);
-
-
-  return (
-    <div className="App">
-    <Routes>
-        <Route path="/" component={HomePage}  />
-        <Route path="/Meal" component={SingleMeal} />
-        <Route path="/MealPlan" component={MealPlan} />
-        <Redirect to="/" />
-    </Routes>
-    </div>
-  );
-}
-} */
