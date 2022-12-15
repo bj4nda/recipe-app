@@ -31,7 +31,6 @@ function Recipe() {
         <p>pricePerServing {meal.pricePerServing}</p>
         <p>readyInMinutes {meal.readyInMinutes}</p>
         <p>servings {meal.servings} </p>
-        <p> summary  {meal.summary} </p>
         <ul>
 {/*         let analyzedInstructions = data.id
  */}
