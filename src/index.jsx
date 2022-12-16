@@ -16,7 +16,6 @@ root.render(
         <Route path="/recipe" element={<Recipe />} />
       </Routes>
     </Router>    
-      
   </React.StrictMode>
 );
 

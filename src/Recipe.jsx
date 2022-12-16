@@ -1,7 +1,7 @@
-import {useEffect, useState,/*  useRef, useLayoutEffect, */ React} from 'react'
+import {useEffect, useState, React} from 'react'
 import { useLocation} from 'react-router-dom'
 import "./index.css"
-import Meal from './Meal';
+
 
 function Recipe() {
     const location = useLocation();
@@ -26,14 +26,12 @@ function Recipe() {
 
      
      return (
-      <div>
-        <img src={meal.image} alt="recipe" className='pic'></img>
-        <p>pricePerServing {meal.pricePerServing}</p>
+      <div className="image-container">
+        <img style={{ width: "auto", }} src={meal.image} alt="recipe" className='image'></img>
+        <p >pricePerServing {meal.pricePerServing}</p>
         <p>readyInMinutes {meal.readyInMinutes}</p>
         <p>servings {meal.servings} </p>
         <ul>
-{/*         let analyzedInstructions = data.id
- */}
         {/* mealData.meals.map(meal => {
                 return <Meal key={meal.id} meal={meal} />
         ) */}
