@@ -221,10 +221,19 @@
   margin-bottom: 20px;
 }
 
-.instructions {
-  max-width: 600px;
+.instructions ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.instructions ol {
-  padding-left: 20px;
+.instructions ol li:before {
+  content: "•";
+  margin-right: 5px;
+  font-weight: bold;
+}
+
+.instructions ol li {
+  margin-bottom: 10px;
+  font-weight: bold;
 }
