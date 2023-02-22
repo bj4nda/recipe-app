@@ -11,37 +11,6 @@
     --DarkGreen: #286E38;
   }
 
-  body {
-    font-family: "Roboto", sans-serif;
-    background-color: #f3f3f3;
-    background: radial-gradient(circle closest-side at 50px 50px, var(--DarkYellow) 3px, transparent 0),
-	radial-gradient(circle closest-side at 40px 60px, var(--DarkYellow) 3px, transparent 0),
-	radial-gradient(circle closest-side at 60px 60px, var(--DarkYellow) 3px, transparent 0),
-	radial-gradient(circle closest-side at 50px 70px, var(--DarkYellow) 3px, transparent 0),
-	
-	radial-gradient(circle closest-side at 150px 165px, var(--DarkYellow) 3px, transparent 0),
-	radial-gradient(circle closest-side at 140px 175px, var(--DarkYellow) 3px, transparent 0),
-	radial-gradient(circle closest-side at 160px 175px, var(--DarkYellow) 3px, transparent 0),
-	radial-gradient(circle closest-side at 150px 185px, var(--DarkYellow) 3px, transparent 0),
-	
-	/* Pineapple base */
-	radial-gradient(ellipse closest-side at 50px 60px, var(--yellow) 18px, transparent 0),
-	
-	radial-gradient(ellipse closest-side at 150px 175px, var(--yellow) 18px, transparent 0),
-	
-	/* Pineapple leafs */
-	radial-gradient(circle closest-side at 30px 40px, var(--softPink) 15px, transparent 0),
-	radial-gradient(circle closest-side at 40px 35px, var(--green) 15px, transparent 0),
-	radial-gradient(circle closest-side at 70px 40px, var(--softPink) 15px, transparent 0),
-	radial-gradient(circle closest-side at 60px 35px, var(--DarkGreen) 15px, transparent 0),
-	
-	radial-gradient(circle closest-side at 130px 155px, var(--softPink) 15px, transparent 0),
-	radial-gradient(circle closest-side at 140px 150px, var(--green) 15px, transparent 0),
-	radial-gradient(circle at 170px 155px, var(--softPink) 15px, transparent 0),
-	radial-gradient(circle at 160px 150px, var(--DarkGreen) 15px, transparent 0);
-	background-color: var(--softPink);
-	background-size: 180px 210px;
-  }
   
   
   .App {
@@ -217,7 +186,7 @@
     }
   }
 
-.image-container {
+/* .image-container {
   margin: auto;
   margin-top: 50px;
   text-align: center;
@@ -232,4 +201,30 @@
   margin: 0 auto;
   width: auto;
   height: 400px;
+} */
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  
+}
+
+.image {
+  width: auto;
+  margin-bottom: 20px;
+}
+
+.servings {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.instructions {
+  max-width: 600px;
+}
+
+.instructions ol {
+  padding-left: 20px;
 }
